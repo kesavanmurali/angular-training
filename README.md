@@ -1,27 +1,59 @@
-# AngularTraining
+# Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.12.
+## Step-0 : Angular Basics
 
-## Development server
+- A component-based framework used for developing Single-Page Applications
+- Builtin support of Data-binding and dependency injection
+- Supports responsive web-design and modern frameworks
+- Clean separation of template coding and application logic
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### Key terms
+    - Component
+    - View Template
+    - Directive
+    - Service
+    - Module
 
-## Code scaffolding
+### Setup environment
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Use command-line tool to generate angular project
+- Generates starter and bootstrap files
 
-## Build
+- Install Angular CLI
+```shell
+    npm install --location=gloabl @angular/cli@version
+```
+- Create a project
+```shell
+    ng new <project-name>
+```
+- Build and serve the project.  Runs the app at 4200 by default.
+```shell
+    ng serve
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+#### Important files in the Project
+- angular.json - workspace configuration and execution targets
+- node_modules
+- package.json - List of all the dependencies like pom.xml
+- assets - web assets like images
+- environments - To maintain dev, int and prod environments
+- pollyfills.ts
+- test.ts - Unit test for the entire project
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- Component
+    - Core aspect
+    - View for user interface
+    - Class that contains app logic/event handling for the view
+- View Template
+    - The UI of a component
+    - Static HTML with dynamic elements
+- Directive
+    - Adds custom behavior to HTML elements
+    - Used for looping, conditionals etc.
+- Service
+    - Helper class
+    - Ex: Retreive data from an external server, perform validation, etc.
+- Module
+    - Collection of Components
