@@ -104,7 +104,26 @@ A sales person can be represented as a class.
 
 - To display the list of sales persons, the HTML structure of the new component needs to be defined.
 - Assuming the sales-person-list component holds a list of SalesPerson objects, those objects can added to the structure by using loop.  
-    - `*ngFor=` Use this to define the loop in the HTML elements, part of component's HTML file.
+    - `*ngFor=` Use this structural directive to define the loop in the HTML elements, part of component's HTML file.
+
+## Step-2 : Wide surf with Angular
+
+- **Bootstrap Integration**
+    - Take the latest link from bootstrap site(https://getbootstrap.com) and add it to `index.html`.  And ensure the JS and CSS files are added at the runtime.
+    - This would enable you to use the bootstrap framework within all the components(HTML files).
+- **Angular Structural Directives**
+    - Structurl directives allows us to introduce dynamic structuring to the normal HTML files of a component.  
+    - Angular defines it's own construct on this.
+        - `ngFor`
+        - `ngIf`
+        - `ngSwitch`
+        - `ngStyle`
+- **Angular Pipes**
+    - Angular provides ease of data formatting for common data types with pipes and formatting options.
+    - Below an example of a Pipe.  Find more [here](https://angular.io/api/common#pipes).
+```typescript
+    {{somevalue | currency : "USD"}}
+```
 
 ## Angular Conventions
 
