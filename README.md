@@ -39,7 +39,7 @@
     - Assuming *npm* and *node* installed already
 - Install Angular CLI
 ```shell
-    npm install --location=gloabl @angular/cli@version
+    npm install --location=global @angular/cli@version
 ```
 - Create a bootstrapped project
 ```shell
@@ -104,7 +104,30 @@ A sales person can be represented as a class.
 
 - To display the list of sales persons, the HTML structure of the new component needs to be defined.
 - Assuming the sales-person-list component holds a list of SalesPerson objects, those objects can added to the structure by using loop.  
-    - `*ngFor=` Use this to define the loop in the HTML elements, part of component's HTML file.
+    - `*ngFor=` Use this structural directive to define the loop in the HTML elements, part of component's HTML file.
+
+Find changes for Step-1 [here](https://github.com/kesavanmurali/angular-training/pull/1).
+
+## Step-2 : Wide surf with Angular
+
+- **Bootstrap Integration**
+    - Take the latest link from [bootstrap site](https://getbootstrap.com) and add it to `index.html`.  And ensure the JS and CSS files are added at the runtime.
+    - This would enable you to use the bootstrap framework within all the components(HTML files).
+- **Angular Structural Directives**
+    - Structurl directives allows us to introduce dynamic structuring to the normal HTML files of a component.  
+    - Angular defines it's own construct on this.
+        - `ngFor`
+        - `ngIf`
+        - `ngSwitch`
+        - `ngStyle`
+- **Angular Pipes**
+    - Angular provides ease of data formatting for common data types with pipes and formatting options.
+    - Below an example of a Pipe.  Find more [here](https://angular.io/api/common#pipes).
+```typescript
+    {{somevalue | currency : "USD"}}
+```
+
+Find changes for Step-2 [here](https://github.com/kesavanmurali/angular-training/pull/2).
 
 ## Angular Conventions
 
